@@ -1,0 +1,71 @@
+    /* Собственный стиль кнопки orange */
+    .orange-btn {
+        color: #fff; /* Цвет текста */
+        background-color: #FF5733; /* Цвет кнопки по хэшу */
+        border-color: #FF5733; /* Цвет рамки кнопки */
+      }
+    .orange-btn:hover {
+        background-color: #E64A19; /* Цвет кнопки при наведении мыши */
+        border-color: #E64A19; /* Цвет рамки при наведении мыши */
+      }
+ /* Стили для футера */
+.footer2 {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #212529; /* Цвет фона футера */
+  padding: 10px 0; /* Отступы внутри футера */
+  text-align: center; /* Выравнивание содержимого по центру */
+}
+.text-color {
+  color: rgb(255, 255, 255);
+}
+.text-color2 {
+  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 15px;
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 20px;
+  color: rgb(0, 0, 0);
+}
+.text-color2 img {
+  border-radius: 10px; /* Добавление скругленных углов для изображения */
+  width: 30%; /* Сделать изображение полностью заполняющим блок */
+  height: auto; /* Автоматический подбор высоты для сохранения пропорций */
+  margin-bottom: 15px; /* Добавление отступа снизу для изображения */
+  margin-right: 20px; /* Отступ справа для текста */
+  float: left; /* Обтекание текстом с левой стороны */
+}
+.text-color3 {
+  background-color: rgb(148, 148, 148);
+  border-radius: 15px;
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 20px;
+  color: rgb(0, 0, 0);
+}
+.custom-margin {
+  margin-bottom: 90px; /* Используйте нужное вам значение */
+}     
+/* Стили для кнопки закрытия модального окна */
+.close-btn {
+  background-color: #005a6a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 15px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.close-btn:focus,
+.close-btn:hover {
+  color: black;
+  background-color: #014a57; /* Цвет кнопки при фокусе или наведении */
+}
+
+/* Стили для увеличения толщины линии */
+.hr-thick {
+  border: 3px solid #ffffff; /* Измените цвет и толщину линии по вашему выбору */
+}
