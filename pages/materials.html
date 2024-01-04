@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Σκάλα - Монтаж крыши Щучинск</title>
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/styles.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Навигационное меню Bootstrap с темным фоном -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="../images/logo.png" alt="Логотип" class="mr-2 boldUsing">
+        СКАЛА
+      </a>
+      <a class="navbar-brand text-center">Монтаж крыши Щучинск</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+         <li class="nav-item">
+            <a class="nav-link" href="../index.html">Главная</a>
+        </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/services.html">Услуги</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/contacts.html">Контакты</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Контент страницы услуг -->
+<div class="container mt-4">
+  <div class="row">
+        <!-- Контейнер с кнопками переключения услуг -->
+        <div class="text-color2 mt-3 d-flex justify-content-center flex-wrap">
+          <button class="btn material-button orange-btn menu-bs2 mr-2 mb-2 active mx-2" data-target="material-content-1">Кровельный материал</button>
+          <button class="btn material-button orange-btn menu-bs2 mr-2 mb-2 mx-2" data-target="material-content-2">Гидроизоляция</button>
+          <button class="btn material-button orange-btn menu-bs2 mr-2 mb-2 mx-2" data-target="material-content-3">Деревянные элементы</button>
+          <button class="btn material-button orange-btn menu-bs2 mr-2 mb-2 mx-2" data-target="material-content-4">Обрешетка</button>
+          <button class="btn material-button orange-btn menu-bs2 mr-2 mb-2 mx-2" data-target="material-content-5">Вентиляция</button>
+          <button class="btn material-button orange-btn menu-bs2 mr-2 mb-2 mx-2" data-target="material-content-6">Крепежные элементы</button>
+          <!-- Кнопки для остальных услуг -->
+          <!-- ... -->
+        </div>
+        <div class="d-flex justify-content-center shopping-cart">
+          <div>
+          <p class="text-center cart-font boldUsing"><img src="../images/cart.png" alt="Cart"> Ваша корзина:</p>
+        <div id="cart" class="overflow-auto shopping-cart-inside d-flex p-design">
+          </div>
+        </div>
+      </div>
+          
+        
+      <div id="material-content-1" class="material-content">
+        <div class="text-color2 product-content boldUsing">
+          <img src="../images/material1.jpg" alt="Материал 1">
+          <button class="title pcp-button" disabled>Асфальтовые черепицы</button>
+          <h2 class="boldUsing">Преимущества:</h2>
+            <p>● Долговечность и надежность.</p>
+            <p>● Эстетика и разнообразие.</p>
+            <p>● Простота монтажа и обслуживания.</p>
+          <button type="button" onclick="addToCart('Асфальтовые черепицы', '../images/material1.jpg')" class="btn orange-btn">
+            Добавить в корзину
+        </button>
+        </div>
+        <div class="text-color2 product-content boldUsing">
+          <img src="../images/material2.jpg" alt="Материал 2">
+          <button class="title pcp-button" disabled>Металлические листы</button>
+          <h2 class="boldUsing">Преимущества:</h2>
+            <p>● Долговечность и прочность.</p>
+            <p>● Возможность использования в различных условиях.</p>
+            <p>● Устойчивость к коррозии и внешним воздействиям.</p>
+          <button type="button" onclick="addToCart('Металлические листы', '../images/material2.jpg')" class="btn orange-btn">
+            Добавить в корзину
+          </button>
+        </div>
+        <div class="text-color2 product-content boldUsing">
+          <img src="../images/material3.jpg" alt="Материал 3">
+          <button class="title pcp-button" disabled>Битумные кровельные рулоны</button>
+          <h2 class="boldUsing">Преимущества:</h2>
+          <p>● Водонепроницаемость и долговечность.</p>
+          <p>● Простота монтажа и обслуживания.</p>
+          <p>● Устойчивость к ультрафиолетовому излучению и внешним воздействиям.</p>
+          <button type="button" onclick="addToCart('Битумные кровельные рулоны', '../images/material3.jpg')" class="btn orange-btn">
+            Добавить в корзину
+          </button>
+        </div>
+        <div class="text-color2 product-content boldUsing">
+          <img src="../images/material4.jpg" alt="Материал 4">
+          <button class="title pcp-button" disabled>Керамическая черепица</button>
+          <h2 class="boldUsing">Преимущества:</h2>
+          <p>● Эстетика и разнообразие цветовых решений.</p>
+          <p>● Долговечность и надежность.</p>
+          <p>● Устойчивость к воздействию окружающей среды и атмосферных явлений.</p>
+          <button type="button" onclick="addToCart('Керамическая черепица', '../images/material4.jpg')" class="btn orange-btn">
+            Добавить в корзину
+          </button>
+        </div>
+        <div class="text-color2 product-content boldUsing">
+          <img src="../images/material5.jpg" alt="Материал 5">
+          <button class="title pcp-button" disabled>Деревянные чешуйки</button>
+          <h2 class="boldUsing">Преимущества:</h2>
+          <p>● Естественный вид и уникальность.</p>
+          <p>● Экологичность и природная красота.</p>
+          <p>● Устойчивость к воздействию атмосферных факторов.</p>
+          <button type="button" onclick="addToCart('Деревянные чешуйки', '../images/material5.jpg')" class="btn orange-btn">
+            Добавить в корзину
+          </button>
+        </div>           
+      </div>
+      <div id="material-content-2" class="material-content d-none">
+        <div class="text-color2 product-content boldUsing">
+          <img src="../images/material6.jpg" alt="Материал 6">
+          <button class="title pcp-button" disabled>Пароизоляционные мембраны</button>
+          <h2 class="boldUsing">Преимущества:</h2>
+          <p>● Защита от проникновения влаги в конструкцию.</p>
+          <p>● Создание надежного барьера для пара и водяных паров.</p>
+          <p>● Повышение теплоизоляции и устойчивости к влаге.</p>
+          <button type="button" onclick="addToCart('Пароизоляционные мембраны', '../images/material6.jpg')" class="btn orange-btn">
+            Добавить в корзину
+          </button>
+        </div>
+        <div class="text-color2 product-content boldUsing">
+          <img src="../images/material7.jpg" alt="Материал 7">
+          <button class="title pcp-button" disabled>Гидроизоляционные материалы</button>
+          <h2 class="boldUsing">Преимущества:</h2>
+          <p>● Предотвращение проникновения влаги в конструкцию.</p>
+          <p>● Устойчивость к воздействию влаги и воды.</p>
+          <p>● Защита строительных конструкций от разрушения из-за влажности.</p>
+          <button type="button" onclick="addToCart('Гидроизоляционные материалы', '../images/material7.jpg')" class="btn orange-btn">
+            Добавить в корзину
+          </button>
+        </div>        
+      </div>
+      <div id="material-content-3" class="material-content d-none">
+        <div class="text-color2 product-content boldUsing">
+          <img src="../images/material8.jpg" alt="Материал 8">
+          <button class="title pcp-button" disabled>Стропила</button>
+          <h2 class="boldUsing">Преимущества:</h2>
+          <p>● Обеспечение поддержки и прочности кровли.</p>
+          <p>● Возможность создания устойчивой крыши.</p>
+          <p>● Использование различных материалов для стропил.</p>
+          <button type="button" onclick="addToCart('Стропила', '../images/material8.jpg')" class="btn orange-btn">
+            Добавить в корзину
+          </button>
+        </div>
+        <div class="text-color2 product-content boldUsing">
+          <img src="../images/material9.jpg" alt="Материал 9">
+          <button class="title pcp-button" disabled>Подшивка</button>
+          <h2 class="boldUsing">Преимущества:</h2>
+          <p>● Обеспечение защиты от внешних факторов.</p>
+          <p>● Эстетическое оформление внутренней части крыши.</p>
+          <p>● Простота монтажа и устойчивость к влаге.</p>
+          <button type="button" onclick="addToCart('Подшивка', '../images/material9.jpg')" class="btn orange-btn">
+            Добавить в корзину
+          </button>
+        </div>
+        <div class="text-color2 product-content boldUsing">
+          <img src="../images/material10.jpg" alt="Материал 10">
+          <button class="title pcp-button" disabled>Деревянные балки</button>
+          <h2 class="boldUsing">Преимущества:</h2>
+          <p>● Естественный и экологически чистый материал.</p>
+          <p>● Прочность и надежность в конструкциях.</p>
+          <p>● Легкость обработки и универсальность использования.</p>
+          <button type="button" onclick="addToCart('Деревянные балки', '../images/material10.jpg')" class="btn orange-btn">
+            Добавить в корзину
+          </button>
+        </div>
+      </div> 
+        <div id="material-content-4" class="material-content d-none">
+          <div class="text-color2 product-content boldUsing">
+            <img src="../images/material11.jpg" alt="Материал 11">
+            <button class="title pcp-button" disabled>Деревянная обрешетка</button>
+            <h2 class="boldUsing">Преимущества:</h2>
+            <p>● Прочность и надежность в каркасе кровли.</p>
+            <p>● Возможность обработки и антисептирования материала.</p>
+            <p>● Легкость и удобство монтажа.</p>
+            <button type="button" onclick="addToCart('Деревянная обрешетка', '../images/material11.jpg')" class="btn orange-btn">
+              Добавить в корзину
+            </button>
+          </div>   
+          <div class="text-color2 product-content boldUsing">
+            <img src="../images/material12.jpg" alt="Материал 12">
+            <button class="title pcp-button" disabled>Металлическая обрешетка</button>
+            <h2 class="boldUsing">Преимущества:</h2>
+            <p>● Прочность и долговечность.</p>
+            <p>● Устойчивость к воздействию окружающей среды.</p>
+            <p>● Легкий вес и простота монтажа.</p>
+            <button type="button" onclick="addToCart('Металлическая обрешетка', '../images/material12.jpg')" class="btn orange-btn">
+              Добавить в корзину
+            </button>
+          </div>                
+          </div>           
+        <div id="material-content-5" class="material-content d-none">
+          <div class="text-color2 product-content boldUsing">
+            <img src="../images/material13.jpg" alt="Материал 13">
+            <button class="title pcp-button" disabled>Минеральная вата</button>
+            <h2 class="boldUsing">Преимущества:</h2>
+            <p>● Хорошие теплоизоляционные свойства.</p>
+            <p>● Огнестойкость и звукоизоляция.</p>
+            <p>● Устойчивость к гниению и влаге.</p>
+            <button type="button" onclick="addToCart('Минеральная вата', '../images/material13.jpg')" class="btn orange-btn">
+              Добавить в корзину
+            </button>
+          </div>
+          <div class="text-color2 product-content boldUsing">
+            <img src="../images/material14.jpg" alt="Материал 14">
+            <button class="title pcp-button" disabled>Пенополистирол</button>
+            <h2 class="boldUsing">Преимущества:</h2>
+            <p>● Хорошие теплоизоляционные свойства.</p>
+            <p>● Легкий вес и прочность.</p>
+            <p>● Устойчивость к влаге и воздействию химических веществ.</p>
+            <button type="button" onclick="addToCart('Пенополистирол', '../images/material14.jpg')" class="btn orange-btn">
+              Добавить в корзину
+            </button>
+          </div>
+          <div class="text-color2 product-content boldUsing">
+            <img src="../images/material15.jpg" alt="Материал 15">
+            <button class="title pcp-button" disabled>Пеноплекс</button>
+            <h2 class="boldUsing">Преимущества:</h2>
+            <p>● Отличные теплоизоляционные свойства.</p>
+            <p>● Прочность и легкий вес.</p>
+            <p>● Устойчивость к влаге и воздействию химических веществ.</p>
+            <button type="button" onclick="addToCart('Пеноплекс', '../images/material15.jpg')" class="btn orange-btn">
+              Добавить в корзину
+            </button>
+          </div>
+          <div class="text-color2 product-content boldUsing">
+            <img src="../images/material16.jpg" alt="Материал 16">
+            <button class="title pcp-button" disabled>Вентиляционные трубы</button>
+            <h2 class="boldUsing">Преимущества:</h2>
+            <p>● Обеспечение эффективной вентиляции в помещениях.</p>
+            <p>● Устойчивость к коррозии и долговечность.</p>
+            <p>● Легкий вес и простота монтажа.</p>
+            <button type="button" onclick="addToCart('Вентиляционные трубы', '../images/material16.jpg')" class="btn orange-btn">
+              Добавить в корзину
+            </button>
+          </div>
+          <div class="text-color2 product-content boldUsing">
+            <img src="../images/material17.jpg" alt="Материал 17">
+            <button class="title pcp-button" disabled>Вентиляционные люки</button>
+            <h2 class="boldUsing">Преимущества:</h2>
+            <p>● Обеспечение доступа к вентиляционным системам.</p>
+            <p>● Надежность и долговечность материала.</p>
+            <p>● Простота установки и обслуживания.</p>
+            <button type="button" onclick="addToCart('Вентиляционные люки', '../images/material17.jpg')" class="btn orange-btn">
+              Добавить в корзину
+            </button>
+          </div> 
+        </div>  
+        <div id="material-content-6" class="material-content d-none">
+          <div class="text-color2 product-content boldUsing">
+            <img src="../images/material18.jpg" alt="Материал 18">
+            <button class="title pcp-button" disabled>Гвозди</button>
+            <h2 class="boldUsing">Преимущества:</h2>
+            <p>● Разнообразие типов и размеров для различных задач.</p>
+            <p>● Долговечность и надежность крепления.</p>
+            <p>● Широкое применение в строительстве и ремонте.</p>
+            <button type="button" onclick="addToCart('Гвозди', '../images/material18.jpg')" class="btn orange-btn">
+              Добавить в корзину
+            </button>
+          </div>
+          <div class="text-color2 product-content boldUsing">
+            <img src="../images/material19.jpg" alt="Материал 19">
+            <button class="title pcp-button" disabled>Шурупы</button>
+            <h2 class="boldUsing">Преимущества:</h2>
+            <p>● Широкий выбор типов и размеров для различных задач.</p>
+            <p>● Простота монтажа и надежное крепление.</p>
+            <p>● Используются в строительстве, ремонте и мебельном производстве.</p>
+            <button type="button" onclick="addToCart('Шурупы', '../images/material19.jpg')" class="btn orange-btn">
+              Добавить в корзину
+            </button>
+          </div>
+          <div class="text-color2 product-content boldUsing">
+            <img src="../images/material20.jpg" alt="Материал 20">
+            <button class="title pcp-button" disabled>Болты</button>
+            <h2 class="boldUsing">Преимущества:</h2>
+            <p>● Широкий выбор типов и размеров для различных строительных и монтажных работ.</p>
+            <p>● Прочные и надежные соединения.</p>
+            <p>● Используются в строительстве, ремонте, промышленности и мебельном производстве.</p>
+            <button type="button" onclick="addToCart('Болты', '../images/material20.jpg')" class="btn orange-btn">
+              Добавить в корзину
+            </button>
+          </div>
+                     
+        </div>     
+      </div>
+  
+  
+ 
+</div>
+</div>
+
+<div class="modal fade" id="consultationModal" tabindex="-1" role="dialog" aria-labelledby="consultationModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="text-color3 modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="consultationModalLabel">Запрос консультации</h5>
+        <button type="button" class="close-btn" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">Закрыть</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="materialSelect">Услуга:</label>
+            <input type="text" class="form-control formFieldColor" id="materialSelect" value="Услуга 1" disabled>
+          </div>
+          <div class="form-group">
+            <label for="fullName">Ваше ФИО:</label>
+            <input type="text" class="form-control formFieldColor" id="fullName">
+          </div>
+          <div class="form-group">
+            <label for="phone">Ваш номер телефона:</label>
+            <input type="tel" class="form-control formFieldColor" id="phone">
+          </div>
+          <div class="mb-3"></div>
+          <button type="submit" class="btn orange-btn btn-block">Запросить консультацию</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="custom-margin"></div>
+
+  <!-- Подвал (футер) -->
+  <footer class="footer footer2">
+    <div class="container">
+      <span class="text-white">© Σκάλα <br><img src="../images/phone.png" alt="Smiley"> +7 707 860 16 61 (Николай)</span>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS, необходим для работы некоторых компонентов Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="../js/bootstrap.bundle.min.js"></script>
+  <script src="../js/materials.js"></script>
+
+</body>
+</html>
