@@ -49,11 +49,13 @@
           <!-- Кнопки для остальных услуг -->
           <!-- ... -->
         </div>
-        <div class="d-flex justify-content-center shopping-cart">
+        <div class="shopping-cart d-flex justify-content-center">
           <div>
           <p class="text-center cart-font boldUsing"><img src="../images/cart.png" alt="Cart"> Ваша корзина:</p>
-        <div id="cart" class="overflow-auto shopping-cart-inside d-flex p-design">
-          </div>
+        <div id="cart" class="overflow-auto shopping-cart-inside d-flex p-design"></div>
+        <button type="button" onclick="editModal('Продажа материалов')" class="btn orange-btn" data-toggle="modal" data-target="#shopModal">
+          Заказать
+        </button>
         </div>
       </div>
           
@@ -261,8 +263,8 @@
             <button class="title pcp-button" disabled>Гвозди</button>
             <h2 class="boldUsing">Преимущества:</h2>
             <p>● Разнообразие типов и размеров для различных задач.</p>
-            <p>● Долговечность и надежность крепления.</p>
-            <p>● Широкое применение в строительстве и ремонте.</p>
+            <p>● Долговечность и надежность.</p>
+            <p>● Легкость удаления.</p>
             <button type="button" onclick="addToCart('Гвозди', '../images/material18.jpg')" class="btn orange-btn">
               Добавить в корзину
             </button>
@@ -272,8 +274,8 @@
             <button class="title pcp-button" disabled>Шурупы</button>
             <h2 class="boldUsing">Преимущества:</h2>
             <p>● Широкий выбор типов и размеров для различных задач.</p>
-            <p>● Простота монтажа и надежное крепление.</p>
-            <p>● Используются в строительстве, ремонте и мебельном производстве.</p>
+            <p>● Надежное крепление.</p>
+            <p>● Большая устойчивость к вибрациям.</p>
             <button type="button" onclick="addToCart('Шурупы', '../images/material19.jpg')" class="btn orange-btn">
               Добавить в корзину
             </button>
@@ -284,7 +286,7 @@
             <h2 class="boldUsing">Преимущества:</h2>
             <p>● Широкий выбор типов и размеров для различных строительных и монтажных работ.</p>
             <p>● Прочные и надежные соединения.</p>
-            <p>● Используются в строительстве, ремонте, промышленности и мебельном производстве.</p>
+            <p>● Регулируемая длина соединения.</p>
             <button type="button" onclick="addToCart('Болты', '../images/material20.jpg')" class="btn orange-btn">
               Добавить в корзину
             </button>
@@ -298,11 +300,11 @@
 </div>
 </div>
 
-<div class="modal fade" id="consultationModal" tabindex="-1" role="dialog" aria-labelledby="consultationModalLabel" aria-hidden="true">
+<div class="modal fade" id="shopModal" tabindex="-1" role="dialog" aria-labelledby="consultationModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="text-color3 modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="consultationModalLabel">Запрос консультации</h5>
+        <h5 class="modal-title" id="shopModalLabel">Заказ материалов</h5>
         <button type="button" class="close-btn" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">Закрыть</span>
         </button>
@@ -311,7 +313,7 @@
         <form>
           <div class="form-group">
             <label for="materialSelect">Услуга:</label>
-            <input type="text" class="form-control formFieldColor" id="materialSelect" value="Услуга 1" disabled>
+            <input type="text" class="form-control formFieldColor" id="materialSelect" value="Продажа материалов" disabled>
           </div>
           <div class="form-group">
             <label for="fullName">Ваше ФИО:</label>
@@ -321,13 +323,18 @@
             <label for="phone">Ваш номер телефона:</label>
             <input type="tel" class="form-control formFieldColor" id="phone">
           </div>
+          <div class="form-group">
+            <label for="cartItemsList">Список товаров:</label>
+            <input type="text" class="form-control formFieldColor" id="cartItemsList" disabled>
+          </div>
           <div class="mb-3"></div>
-          <button type="submit" class="btn orange-btn btn-block">Запросить консультацию</button>
+          <button type="submit" class="btn orange-btn btn-block">Запросить консультацию по заказу</button>
         </form>
       </div>
     </div>
   </div>
 </div>
+
 
 <div class="custom-margin"></div>
 
