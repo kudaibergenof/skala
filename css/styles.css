@@ -215,14 +215,21 @@
   width: 50%; /* Устанавливает ширину блока */
   min-width: 360px; /* Устанавливает минимальную ширину блока для отзывчивости */
   max-width: 600px; /* Устанавливает максимальную ширину блока для отзывчивости */
-  height: 300px; /* Устанавливает высоту блока */
+  height: 320px; /* Устанавливает высоту блока */
   padding: 20px;
   margin-bottom: 20px;
   color: rgb(0, 0, 0);
 }
+.shopping-cart div {
+  width: 100%;
+  height: 80%;
+}
+.shopping-cart button {
+  margin: 10px auto; /* auto для margin-left и margin-right выровняет кнопку по центру горизонтально */
+  display: block; /* Чтобы кнопка занимала всю доступную ширину */
+}
+
 .shopping-cart-inside {
-  width: 300px;
-  height: 200px;
   background-color: rgb(208, 225, 223);
   border-radius: 15px;
   padding: 20px;
@@ -261,12 +268,12 @@
   flex-direction: column; /* Это свойство указывает на направление столбца, но отображает элементы в обратном порядке */
 }
 .delete-btn {
-  background-image: url('путь_к_изображению'); /* Укажите путь к вашему изображению */
+  background-image: url('../images/delete.jpg'); /* Укажите путь к вашему изображению */
   background-size: cover; /* Масштабирование изображения */
   /* Другие свойства для стилизации кнопки (например, размеры, отступы и т.д.) */
-  width: 20px;
-  height: 20px;
-  border: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 4px;
   cursor: pointer;
 }
 
